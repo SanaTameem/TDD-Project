@@ -18,4 +18,10 @@ describe Solver do
             expect(Solver.new.factorial(4)).to eq 24
         end
     end
+
+    context "Tests for the reverse method" do
+        it "Should return the reversed word" do
+            expect(Solver.new.reverse("Sana")).to eq("anaS")
+        end
+    end
 end
