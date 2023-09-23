@@ -9,7 +9,6 @@ class Solver
         end
     end
 
-    
     def reverse(word)
         word.reverse
     end

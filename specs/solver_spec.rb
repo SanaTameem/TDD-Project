@@ -24,4 +24,22 @@ describe Solver do
             expect(Solver.new.reverse("Sana")).to eq("anaS")
         end
     end
+
+    context "Test for the fizzbuzz method" do
+        it "Should return fizz if the input is devisible by 3" do
+            expect(Solver.new.fizzbuzz(33)).to eq("fizz")
+        end
+
+        it "Should return buzz if the input is devisible by 5" do
+            expect(Solver.new.fizzbuzz(50)).to eq("buzz")
+        end
+
+        it "Should return fizzbuzz if the input is devisible by 3 and 5" do
+            expect(Solver.new.fizzbuzz(60)).to eq("fizzbuzz")
+        end
+
+        it "Should return the number itself if it is not devisible by 3 and 5" do
+            expect(Solver.new.fizzbuzz(17)).to eq(17)
+        end
+    end
 end
